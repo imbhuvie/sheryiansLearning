@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* background-color: aquamarine; */
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.div1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    /* position: absolute; */
+}
+.div2{
+    height: 110px;
+    width: 90px;
+    background-color: rgb(251, 251, 251);
+    /* position: absolute; */
+}
+.div3{
+    height: 140px;
+    width: 150px;
+    background-color: rgb(63, 35, 177);
+    /* position: absolute; */
+}
+.div-box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+.chhota-box{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: absolute;
+    right: 5%;
+}
+.div-box2{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(1, 73, 33);
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* align-items: center; */
+    /* align-items: start; */
+    /* align-items: end; */
+}
+.chhotabox1{
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+}
+.chhotabox2{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(84, 164, 235);
+}.chhotabox3{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(232, 94, 174);
+}
+.container {
+    /* position: absolute; */
+    /* color: green; */
+    /* background-color: black; */
+    padding: 25px;
+    margin: 10px;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1697441391334-7c5532f4677a?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=987);
+    background-size:cover ;
+    background-position: center;
+    /* background-color: aquamarine; */
+}
