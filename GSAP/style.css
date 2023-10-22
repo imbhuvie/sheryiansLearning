@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body{
+    /* height: 100vh;
+    width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+h1{
+    font-size: 100px;
+    font-weight: 1000;
+    position: relative;
+
+}
+h1::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 10px;
+    background-color: black;
+    bottom: 0;
+    left: 0;    
+}
+h1:hover::after{
+    animation-name: lineanime;
+    animation-duration: 3s;
+    /* animation-iteration-count: 2; */
+}
+@keyframes lineanime{
+    0%{
+        width:0 ;
+        left: 0;
+    }
+    25%{
+        width: 100%;
+        right: 0;
+    }
+     45%{
+        width: 0;
+        left: 0;
+    }
+    70%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    } 
+    /* 100%{
+        width: 100%;
+        left: 0;
+    } */
+}
+h2{
+    font-size: 100px;
+    font-weight: 1000;
+    position: relative;
+
+}
+h2::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 10px;
+    background-color: black;
+    bottom: 0;
+    left: 0;    
+}
+h2:hover::after{
+    animation-name: lineanime1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes lineanime1{
+    0%{
+        width:0 ;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+/* #page1{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+} */
+#box{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: rgb(204, 134, 43);
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
+    /* animation-timing-function: cubic-bezier(.41,0,.96,.67); */
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(.41,0,.96,.67);
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+    /* ek bar seedha ek bar ulta  alternate se chalgea */
+}
+@keyframes moving {
+    0%{
+        left: 0;
+        background-color: green;
+        top: 0;
+    }
+    50%{
+        left: 50%;
+        background-color: rgb(44, 21, 216);
+        top: 0;
+        color: darksalmon;
+        rotate: 90deg;
+    }
+    100%{
+        left: 75%;
+        background-color: black;
+        color: white;
+        top: 50%;
+        
+    }
+}
+/* @keyframes moving {
+    from{
+        left: 0;
+
+    }
+    to{
+        left: 60%;
+        top: 40%;
+        background-color: black;
+    }
+} */
+/* 
+#box p{
+    font-size: 20px;
+}
+h1{
+    color: green;
+    font-size: 50px;
+    display: flex;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+#heading{
+    height: 150px;
+    width: 300px;
+    background-color: blue;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+h2{
+    color: red;
+    font-size: 35px;
+}
+h3{
+    color:blue;
+    font-size: 30px;
+}
+/* @keyframes moving {
+    from{
+        left: 0;
+    }
+    to{
+        left: 60%;
+        top: 20%;
+        color: black;
+    }
+} */ 

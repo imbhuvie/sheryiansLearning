@@ -175,4 +175,41 @@ setTimeout(function(){
 function firstClassFuntion(a){
     a();
 }
-firstClassFuntion(function(){console.log("This is first class function")});
+firstClassFuntion(function(){console.log("This is first class function")});//this is firstclassfunction
+
+// function hello(bbb){ //this is high order fncs
+//    bbb();
+// }
+// hello(function(){console.log("hello bhupendra")});
+//constructor funcs:used, when you need elements with same properties
+function box(){
+    this.width=12;
+    this.height=15;
+    this.color="black";
+    this.taste="sweet";
+}
+var b1=new box();
+console.log(b1);
+// document.getElementByClass("container").style.backgroundColor="green";
+setTimeout(() => {
+    console.log("djabcklj")
+}, 1000);
+var pk=(function(){
+ var pr="pyar";
+//  console.log(pr);
+return{
+    getter:function(){
+        console.log(pr);
+    },
+    setter:function(val){
+        pr=val;
+    }
+}
+
+})()
+pk.getter();
+pk.setter("hasfj");
+pk.getter();
+
+////  DOM ?????????????
+
