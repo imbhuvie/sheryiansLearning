@@ -79,3 +79,4 @@ console.log(h2.innerHTML);
 var bx=document.querySelector(".box")
 // bx.textContent="<h1>Hello</h1>";
 bx.innerHTML="<h1>hello</h1><h1>hello</h1><h1>hello</h1>"
+
